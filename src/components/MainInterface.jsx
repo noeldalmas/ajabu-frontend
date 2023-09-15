@@ -5,7 +5,7 @@ function MainInterface() {
   return (
     <main>
       <div className="left-side">
-        <section className="side-no-image">
+        <section className="side">
           <AsideNoImaage />
         </section>
         <section className="imaged-side"></section>
@@ -18,10 +18,12 @@ function MainInterface() {
           <span>Questions</span>
           <span>Pages</span>
         </nav>
-        <div className="down-middle">Something</div>
+        <div className="side">Something</div>
       </div>
       <div className="right-side">
-        <ImagedAside />
+        <section className="side">
+          <ImagedAside />
+        </section>
       </div>
     </main>
   );

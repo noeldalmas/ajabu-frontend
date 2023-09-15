@@ -26,8 +26,8 @@ function AsideNoImaage() {
     ]
   return (
     <>
-      <div className="flex">
-        <h3>Most Trending</h3>
+      <div className="aside-trend-card">
+        <h4>Most Trending</h4>
         <div>
           <i className="fas fa-credit-card"></i>
           <i className="fas fa-chevron-down"></i>
@@ -35,9 +35,9 @@ function AsideNoImaage() {
       </div>
       <div>
         {trending.map((trend, id) => {
-          return <p key={id}>#{trend.name}</p>;
+          return <p key={id} className="trends">#{trend.name}</p>;
         })}
-        <p>Show more</p>
+        <p className="show-more">Show more</p>
       </div>
     </>
   );
