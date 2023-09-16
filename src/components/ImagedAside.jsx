@@ -2,27 +2,27 @@ function ImagedAside() {
   const imagedside = [
     {
       id: 1,
-      name: "Trend1",
+      name: "Question1",
       img: "profile.jpg",
     },
     {
       id: 2,
-      name: "Trend2",
+      name: "Question2",
       img: "profile.jpg",
     },
     {
       id: 3,
-      name: "Trend3",
+      name: "Question3",
       img: "profile.jpg",
     },
     {
       id: 4,
-      name: "Trend4",
+      name: "Question4",
       img: "profile.jpg",
     },
     {
       id: 5,
-      name: "Trend5",
+      name: "Question5",
       img: "profile.jpg",
     },
   ];

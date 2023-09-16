@@ -1,11 +1,20 @@
+import ActualPost from "./ActualPost";
 import AsideNoImaage from "./AsideNoImaage"
+import CreatePost from "./CreatePost";
 import ImagedAside from "./ImagedAside"
+import { useState } from "react";
 
 function MainInterface() {
+
+  const [showStartNewPost, setShowStartNewPost] = useState(false);
+
+  const handleStartNewPost = () => {
+    setShowStartNewPost(!showStartNewPost);
+  }
   return (
     <main>
       <div className="left-side">
-        <section className="side">
+        <section className="side aside-no-image bg-white">
           <AsideNoImaage />
         </section>
         <section className="imaged-side"></section>
@@ -18,35 +27,14 @@ function MainInterface() {
           <span>Questions</span>
           <span>Pages</span>
         </nav>
-        <div className="side">
-          <div className="create-post">
-            <div className="title">
-              <span className="center">Create Post</span>
-              <div className="">
-              <i className="fas fa-remove"></i>
-              </div>
-            </div>
-            <div className="post-field">
-              <div className="user">
-                <img src="profile.jpg" alt="" />
-                <span>User Name</span>
-              </div> 
-              <textarea placeholder="Create your post. Noel!" name="" id="" cols="20" rows="5" ></textarea>      
-            </div>
-            <div className="media-post">
-                <div className="media">
-                  <i className="fas fa-camera-retro"></i>
-                  <i className="fas fa-tasks"></i>
-                  <i className="fas fa-lightbulb"></i>
-                  <i className="fas fa-smile"></i>
-                </div>
-                <button>Post</button>
-              </div>
-          </div>
+        <div className="side lower-middle">
+          <button onClick={handleStartNewPost}>Start Post</button>
+          {showStartNewPost && <CreatePost />}
+          <ActualPost />
         </div>
       </div>
       <div className="right-side">
-        <section className="side">
+        <section className="side bg-white">
           <ImagedAside />
         </section>
       </div>
