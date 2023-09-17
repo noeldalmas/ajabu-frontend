@@ -28,7 +28,7 @@ function ImagedAside() {
   ];
   return (
     <>
-      <h4 className="trend-title">Most Active Questions</h4>
+      <h3 className="trend-title">Most Active Questions</h3>
       <div>
         {imagedside.map((trend, id) => {
           return (

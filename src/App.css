@@ -79,6 +79,13 @@ header {
   align-items: center;
   margin-right: 20px;
 }
+.profile-img{
+  width: 43px;
+  height: 43px; 
+  border-radius: 100%;
+  margin-top: 10px;
+
+}
 img {
   width: 55px;
   height: 50px;
@@ -335,12 +342,19 @@ textarea{
     /* line-height: 200%; */
   }
 
-.tdata{
+.card{
+  margin: 1rem;
+}
+
+.c-box{
+  display: flex;
   border: var(--default-border);
-  justify-content: flex-start;
-  /* border-top: var(--default-border); */
-  margin: auto;
-  padding: 10px;
-  text-align: left;
-  align-items: center;
+}
+.c-data{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+.c-details{
+  text-align: start;
 }

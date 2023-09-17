@@ -27,7 +27,7 @@ function AsideNoImaage() {
   return (
     <>
       <div className="aside-trend-card">
-        <h4>Most Trending</h4>
+        <h3>Most Trending</h3>
         <div>
           <i className="fas fa-credit-card mgn-05"></i>
           <i className="fas fa-chevron-down"></i>
