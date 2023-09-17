@@ -320,3 +320,13 @@ textarea{
     flex: 2;
     /* line-height: 200%; */
   }
+
+.tdata{
+  border: var(--default-border);
+  justify-content: flex-start;
+  /* border-top: var(--default-border); */
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  align-items: center;
+}

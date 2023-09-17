@@ -3,6 +3,7 @@ import AsideNoImaage from "./AsideNoImaage"
 import CreatePost from "./CreatePost";
 import ImagedAside from "./ImagedAside"
 import { useState } from "react";
+import Card from "./Card";
 
 function MainInterface() {
 
@@ -17,7 +18,9 @@ function MainInterface() {
         <section className="side aside-no-image bg-white">
           <AsideNoImaage />
         </section>
-        <section className="imaged-side"></section>
+        <section className="imaged-side">
+          <Card /> 
+        </section>
       </div>
       <div className="middle-part">
         <nav className="up-middle-nav">
