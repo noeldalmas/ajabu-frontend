@@ -48,7 +48,7 @@ function ActualPost() {
     <div className="actual-post bg-white">
       {post.map((post, id) => {
         return (
-          <>
+          <div className="one-post">
             <div className="post-metadata">
               <div className="metadata-left">
                 <img src="profile.jpg" alt="profile photo" />
@@ -105,7 +105,7 @@ function ActualPost() {
               </div>
               <button>Send</button>
             </div>
-          </>
+          </div>
         );
       })}
     </div>

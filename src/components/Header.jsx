@@ -22,7 +22,7 @@ function Header() {
         </span>
       </nav>
       <div className="profile">
-        <img src="profile.jpg" alt="profile photo" width={"60rem"} />
+        <img src="profile.jpg" alt="profile photo"/>
         <i className="fas fa-chevron-down white-icons"></i>
       </div>
     </header>

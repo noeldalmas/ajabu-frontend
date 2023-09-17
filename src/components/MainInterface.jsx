@@ -14,7 +14,7 @@ function MainInterface() {
   }
   return (
     <main>
-      <div className="left-side">
+      <div className="left-side border">
         <section className="side aside-no-image bg-white">
           <AsideNoImaage />
         </section>
@@ -22,7 +22,7 @@ function MainInterface() {
           <Card /> 
         </section>
       </div>
-      <div className="middle-part">
+      <div className="middle-part border">
         <nav className="up-middle-nav">
           <span>All</span>
           <span>Following</span>
@@ -36,8 +36,8 @@ function MainInterface() {
           <ActualPost />
         </div>
       </div>
-      <div className="right-side">
-        <section className="side bg-white">
+      <div className="right-side border">
+        <section className="side img-1-side  bg-white">
           <ImagedAside />
         </section>
       </div>
