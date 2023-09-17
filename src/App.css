@@ -233,12 +233,12 @@ textarea{
   align-items: center;
 }
 
-.media-post{
+/* #media-post{
   display: flex;
   justify-content: space-between;
   padding: 5px;
   border-top: var(--default-border);
-}
+} */
 
 /* Individual Posts */
 .actual-post{

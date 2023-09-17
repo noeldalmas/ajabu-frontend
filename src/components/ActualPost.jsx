@@ -8,6 +8,26 @@ function ActualPost() {
         "image-post-1.jpg",
         "image-post-2.jpg",
         "image-post-1.jpg",
+
+      ],
+    },
+    {
+      id: 3,
+      time: "23 hours ago",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      images: [
+        "image-post-1.jpg",
+        "image-post-2.jpg",
+      ],
+    },
+    {
+      id: 3,
+      time: "23 hours ago",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      images: [
+        "image-post-1.jpg",
+        "image-post-2.jpg",
+        "image-post-1.jpg",
         "image-post-2.jpg",
       ],
     },
