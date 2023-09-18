@@ -1,35 +1,30 @@
-function ActualPost() {
-  const post = [
-    {
-      id: 1,
-      time: "23 hours ago",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: [
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-        "image-post-1.jpg",
+import { useState } from "react";
+function ActualPost2() {
 
-      ],
+  const [posts, setPosts] = useState([
+    {
+      id: 5,
+      time: "5 hours ago",
+      text: "Lorem ipsum dolor sit ",
+      images: [],
     },
     {
       id: 3,
       time: "23 hours ago",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: [
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-      ],
+      images: ["image-post-1.jpg"],
     },
     {
       id: 3,
       time: "23 hours ago",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: [
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-      ],
+      images: ["image-post-1.jpg"],
+    },
+    {
+      id: 3,
+      time: "23 hours ago",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      images: ["image-post-1.jpg", "image-post-2.jpg"],
     },
     {
       id: 2,
@@ -42,13 +37,11 @@ function ActualPost() {
         "image-post-2.jpg",
       ],
     },
-  ];
-
+  ]);
   return (
-    <div className="actual-post bg-white">
-      {post.map((post, id) => {
-        return (
-          <div className="one-post">
+    <>
+      {posts.map((post, id) => (
+          <div className="one-post" key={id}>
             <div className="post-metadata">
               <div className="metadata-left">
                 <img src="profile.jpg" alt="profile photo" />
@@ -56,7 +49,7 @@ function ActualPost() {
                   <p className="user-name">User Name</p>
                   <p>
                     <span>@name</span>
-                    <span key={id}> - {post.time}</span>
+                    <span> - {post.time}</span>
                   </p>
                 </div>
               </div>
@@ -66,12 +59,12 @@ function ActualPost() {
               </div>
             </div>
 
-            <div key={id} className="post-content">
+            <div className="post-content">
               <p>{post.text}</p>
               <div className="post-images">
                 {post.images.map((image, id) => {
                   return (
-                    <img key={id} src={image} alt="image" id="image-post" />
+                    <img src={image} alt="image" id="image-post" />
                   );
                 })}
               </div>
@@ -106,10 +99,9 @@ function ActualPost() {
               <button>Send</button>
             </div>
           </div>
-        );
-      })}
-    </div>
+        ))}
+    </>
   );
 }
 
-export default ActualPost;
+export default ActualPost2

@@ -107,21 +107,16 @@ main {
 
 .left-side {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   
 }
 
 .middle-part {
   flex: 2.5;
-  display: flex;
-  flex-direction: column;
+
   justify-content: space-between;
 }
 .right-side {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   
 }
 
@@ -148,6 +143,8 @@ main {
 .side {
   width: 90%;
   margin:20px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .bg-white {
@@ -251,6 +248,16 @@ textarea{
   margin:0 30px;
   padding: 5px 0;
   border-top: var(--default-border);
+}
+
+.fa-remove{
+  font-size: 20px;
+  margin: 0 10px;
+  
+}
+.fa-remove:hover{
+  color: red;
+  cursor: pointer;
 }
 
 /* Individual Posts */

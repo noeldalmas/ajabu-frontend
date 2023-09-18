@@ -1,16 +1,16 @@
-import ActualPost from "./ActualPost";
 import AsideNoImaage from "./AsideNoImaage"
 import CreatePost from "./CreatePost";
 import ImagedAside from "./ImagedAside"
 import { useState } from "react";
 import Card from "./Card";
+import ActualPost2 from "./ActualPost2";
 
 function MainInterface() {
 
   const [showStartNewPost, setShowStartNewPost] = useState(false);
 
   const handleStartNewPost = () => {
-    setShowStartNewPost(!showStartNewPost);
+    setShowStartNewPost(true);
   }
   return (
     <main>
@@ -32,8 +32,8 @@ function MainInterface() {
         </nav>
         <div className="side lower-middle">
           <button onClick={handleStartNewPost}>Start Post</button>
-          {showStartNewPost && <CreatePost />}
-          <ActualPost />
+          {showStartNewPost && <CreatePost isVisible={showStartNewPost} setIsVisible={setShowStartNewPost} />}
+          <ActualPost2 />
         </div>
       </div>
       <div className="right-side border">

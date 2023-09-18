@@ -1,11 +1,16 @@
 
-function CreatePost() {
+function CreatePost({ isVisible, setIsVisible}) {
+
+  const handleCloseClick = () => {
+    setIsVisible(false);
+  }
+
   return (
     <div className="create-post bg-white">
       <div className="title">
         <span className="center">Create Post</span>
         <div className="">
-          <i className="fas fa-remove"></i>
+          <i className="fas fa-remove" onClick={handleCloseClick}></i>
         </div>
       </div>
       <div className="post-field">
