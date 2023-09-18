@@ -1,29 +1,6 @@
 
-function AsideNoImaage() {
-    const trending = [
-        {
-            id: 1,
-            name: 'Trend1'
-        },
-        {
-            id: 2,
-            name: 'Trend2'
-        },
-        {
-            id: 3,
-            name: 'Trend3'
-        },
-        {
-            id: 4,
-            name: 'Trend4'
-        },
-        {
-            id: 5,
-            name: 'Trend5'
-        }
-        
-        
-    ]
+function AsideNoImaage({trend}) {
+    
   return (
     <>
       <div className="aside-trend-card">
@@ -34,7 +11,7 @@ function AsideNoImaage() {
         </div>
       </div>
       <div>
-        {trending.map((trend, id) => {
+        {trend.map((trend, id) => {
           return <p key={id} className="trends">#{trend.name}</p>;
         })}
         <p className="show-more">Show more</p>

@@ -1,43 +1,6 @@
-import { useState } from "react";
-function ActualPost2() {
+function ActualPost2({posts}) {
 
-  const [posts, setPosts] = useState([
-    {
-      id: 5,
-      time: "5 hours ago",
-      text: "Lorem ipsum dolor sit ",
-      images: [],
-    },
-    {
-      id: 3,
-      time: "23 hours ago",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: ["image-post-1.jpg"],
-    },
-    {
-      id: 3,
-      time: "23 hours ago",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: ["image-post-1.jpg"],
-    },
-    {
-      id: 3,
-      time: "23 hours ago",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: ["image-post-1.jpg", "image-post-2.jpg"],
-    },
-    {
-      id: 2,
-      time: "23 hours ago",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-      images: [
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-        "image-post-1.jpg",
-        "image-post-2.jpg",
-      ],
-    },
-  ]);
+ 
   return (
     <>
       {posts.map((post, id) => (

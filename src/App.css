@@ -180,7 +180,6 @@ border: var(--default-border);
 
 /* Right */
 .img-1-side {
-  border: var(--default-border);
   margin-top: 20px;
 
 }
@@ -193,10 +192,9 @@ border: var(--default-border);
 }
 .trend-title{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 5px;
-  margin-bottom: 0;
+  padding:10px 5px;
+  margin: 0;
   height: 40px;
 }
 
@@ -285,7 +283,7 @@ textarea{
 .uname-time{
   text-align: left;
   font-size: small;
-  line-height: 5px;
+  line-height: 1;
 }
 .user-name{
   font-weight: bold;
