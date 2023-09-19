@@ -29,13 +29,7 @@ function MainInterface() {
         </section>
       </div>
       <div className="middle-part">
-        <nav className="up-middle-nav">
-          <span>All</span>
-          <span>Following</span>
-          <span>Events</span>
-          <span>Questions</span>
-          <span>Pages</span>
-        </nav>
+        
         <div className="side lower-middle">
           <button onClick={handleStartNewPost}>Start Post</button>
           {showStartNewPost && (
