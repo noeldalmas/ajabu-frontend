@@ -1,8 +1,8 @@
-import AsideNoImaage from "./AsideNoImaage";
-import CreatePost from "./CreatePost";
+import AsideNoImaage from "../components/AsideNoImaage";
+import CreatePost from "../components/CreatePost";
 import { useState } from "react";
-import ActualPost2 from "./ActualPost2";
-import AsideMaster from "./AsideMaster";
+import ActualPost2 from "../components/ActualPost2";
+import AsideMaster from "../components/AsideMaster";
 import {
   activeQuestions,
   groupTrends,
@@ -10,7 +10,7 @@ import {
   activePages,
   posts,
   trending
-} from "./data/data";
+} from "../components/data/data";
 
 function MainInterface() {
   const [showStartNewPost, setShowStartNewPost] = useState(false);
@@ -18,6 +18,7 @@ function MainInterface() {
   const handleStartNewPost = () => {
     setShowStartNewPost(true);
   };
+
   return (
     <main>
       <div className="left-side">

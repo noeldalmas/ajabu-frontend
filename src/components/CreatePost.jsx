@@ -20,7 +20,7 @@ function CreatePost({ isVisible, setIsVisible}) {
         </div>
         <textarea
           placeholder="Create your post, User!"
-          name=""
+          name="new-post"
           id=""
           cols="20"
           rows="5"

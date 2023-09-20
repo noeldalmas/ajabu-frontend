@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
 
@@ -9,16 +10,30 @@ function Header() {
   }
   return (
     <header>
-      <img src="logo.jpg" alt="logo" className="logo" />
+      <NavLink to="/">
+        <img src="logo.jpg" alt="logo" className="logo" />
+      </NavLink>
       <nav className="header-nav">
         <div className="search">
-          <i className="fas fa-search" id="fa-search" onClick={handleSearch}></i>
+          <i
+            className="fas fa-search"
+            id="fa-search"
+            onClick={handleSearch}
+          ></i>
           {search && <input type="text" placeholder="Search" />}
         </div>
-        <i className="fas fa-th"></i>
-        <i className="fas fa-calendar mgn-010"></i>
-        <i className="fas fa-question mgn-010"></i>
-        <i className="fas fa-external-link mgn-010"></i>
+        <NavLink to="/groups">
+          <i className="fas fa-th"></i>
+        </NavLink>
+        <NavLink to="/events">
+          <i className="fas fa-calendar mgn-010"></i>
+        </NavLink>
+        <NavLink to="/questions">
+          <i className="fas fa-question mgn-010"></i>
+        </NavLink>
+        <NavLink to="/pages">
+          <i className="fas fa-external-link mgn-010"></i>
+        </NavLink>
         <i className="fas fa-bell mgn-010"></i>
       </nav>
       <div className="profile">
