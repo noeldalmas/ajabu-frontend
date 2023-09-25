@@ -8,9 +8,13 @@ function Header() {
   const handleSearch = () => {
     setSearch(!search)
   }
+
+  
+
+
   return (
     <header>
-      <NavLink to="/">
+      <NavLink to="/" className="logo__link">
         <img src="logo.jpg" alt="logo" className="logo" />
       </NavLink>
       <nav className="header-nav">

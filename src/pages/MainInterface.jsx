@@ -11,6 +11,7 @@ import {
   posts,
   trending
 } from "../components/data/data";
+import Modal from "../components/Modal";
 
 function MainInterface() {
   const [showStartNewPost, setShowStartNewPost] = useState(false);
@@ -47,6 +48,13 @@ function MainInterface() {
         <AsideMaster title="Newest Events" data={newestEvents} />
         <AsideMaster title="Most Active Pages" data={activePages} />
       </div>
+
+      <Modal isOpen={showStartNewPost} setIsOpen={setShowStartNewPost}>
+        <CreatePost
+            isVisible={showStartNewPost}
+            setIsVisible={setShowStartNewPost}
+          />
+      </Modal>
     </main>
   );
 }

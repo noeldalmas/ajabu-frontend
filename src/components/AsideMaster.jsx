@@ -15,6 +15,7 @@ function AsideMaster({title, data}) {
         </div>
       ))}
       <p className="show-more">Show more</p>
+      
     </section>
   );
 }
