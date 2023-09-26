@@ -360,7 +360,7 @@ textarea{
   row-gap: 4px;
   overflow: hidden;
 }
-#image-post{
+.image-post{
   width: 49%;
   height: 50%;
   border-radius: 0;

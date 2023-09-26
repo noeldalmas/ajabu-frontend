@@ -27,7 +27,7 @@ function ActualPost2({posts}) {
               <div className="post-images">
                 {post.images.map((image, id) => {
                   return (
-                    <img src={image} alt="image" id="image-post" />
+                    <img src={image} alt="image" className="image-post" />
                   );
                 })}
               </div>

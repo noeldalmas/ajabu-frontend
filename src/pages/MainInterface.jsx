@@ -34,12 +34,6 @@ function MainInterface() {
         
         <div className="side lower-middle">
           <button onClick={handleStartNewPost}>Start Post</button>
-          {showStartNewPost && (
-            <CreatePost
-              isVisible={showStartNewPost}
-              setIsVisible={setShowStartNewPost}
-            />
-          )}
           <ActualPost2 posts={posts}/>
         </div>
       </div>
