@@ -39,7 +39,8 @@ function ActualPost2({posts}) {
                 <span className="mgn-05">3</span>
               </div>
               <div>
-                <i className="fas fa-heart"></i>
+                <i className="fas fa-heart-empty"></i>
+
                 <span className="mgn-05">3</span>
               </div>
               <div>

@@ -82,10 +82,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5%;
+  padding: 5px 0;
   border-radius: 50px;
   color: whitesmoke;
-  flex: 2.5;
+  /* flex: 2.5; */
+  width: 35rem;
 
 }
 
@@ -149,7 +150,10 @@ main {
   display: flex;
   background-color: var(--default-background);
   justify-content: space-evenly;
-  
+}
+
+main, header{
+  padding-inline: 7rem;
 }
 
 .left-side {
@@ -175,6 +179,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 2rem;
   }
 
 .side {
@@ -302,10 +307,18 @@ textarea{
 }
 .one-post{
   background-color: var(--component-background);
-  margin-top: 40px;
+  margin: 40px auto 0;
   padding: 2rem 1rem 0.75rem;
   border-radius: 5px;
 }
+
+.lower-middle>button,
+.one-post{
+  width: 35rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .post-metadata{
   display: flex;
   justify-content: space-between;

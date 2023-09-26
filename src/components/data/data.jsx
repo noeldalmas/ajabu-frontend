@@ -57,6 +57,18 @@ export const groupTrends = [
     name: "Page Meme",
     description: "Happy Times Memes",
   },
+  {
+    id: "tg06",
+    img: "profile.jpg",
+    name: "Page Meme",
+    description: "Happy Times Memes",
+  },
+  {
+    id: "tg07",
+    img: "profile.jpg",
+    name: "Page Meme",
+    description: "Happy Times Memes",
+  },
 ];
 
 export const newestEvents = [

@@ -28,7 +28,10 @@ function CreatePost({ isVisible, setIsVisible}) {
       </div>
       <div className="media-post">
         <div className="media">
-          <i className="fas fa-camera-retro mgn-010"></i>
+          <input type="file" name="upload__image" id="upload__image" hidden />
+          <label htmlFor="upload__image">
+            <i className="fas fa-camera-retro mgn-010"></i>
+          </label>
           <i className="fas fa-tasks mgn-05"></i>
           <i className="fas fa-lightbulb mgn-010"></i>
           <i className="fas fa-smile mgn-05"></i>
