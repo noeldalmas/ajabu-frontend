@@ -26,8 +26,9 @@ function ActualPost2({posts}) {
               <p>{post.text}</p>
               <div className="post-images">
                 {post.images.map((image, id) => {
+                  const imageClass = post.images.length === 1 ? "image-post full-width" : "image-post";
                   return (
-                    <img src={image} alt="image" className="image-post" />
+                    <img src={image} alt="image" className={imageClass} key={id}/>
                   );
                 })}
               </div>
