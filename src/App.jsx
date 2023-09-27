@@ -7,17 +7,22 @@ import Groups from "./pages/Groups";
 import Pages from "./pages/Pages";
 import Questions from "./pages/Questions";
 import Header from "./components/Header";
+import Login from "./pages/Login";
+import MainApp from "./pages/MainApp";
 
 function App() {
   return (
     <div>
-      <Header />
       <Routes>
-        <Route path="/" element={<MainInterface />} />
-        <Route path="events" element={<Events />} />
-        <Route path="groups" element={<Groups />} />
-        <Route path="pages" element={<Pages />} />
-        <Route path="questions" element={<Questions />} />
+        <Route path="" element={<MainApp/>}>
+          <Route path="" element={<MainInterface />} />
+          <Route path="events" element={<Events />} />
+          <Route path="groups" element={<Groups />} />
+          <Route path="pages" element={<Pages />} />
+          <Route path="questions" element={<Questions />} />
+        </Route>
+
+        <Route path="login" element={<Login/>}/>
       </Routes>
     </div>
   );
