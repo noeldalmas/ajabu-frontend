@@ -23,12 +23,8 @@ function MainInterface() {
   return (
     <main>
       <div className="left-side">
-        <section className="side aside-no-image bg-white">
           <AsideNoImaage trend={trending} />
-        </section>
-        <section className="imaged-side">
           <AsideMaster title="Most Trending Groups" data={groupTrends} />
-        </section>
       </div>
       <div className="middle-part">
         

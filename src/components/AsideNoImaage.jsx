@@ -2,7 +2,7 @@
 function AsideNoImaage({trend}) {
     
   return (
-    <>
+    <section className="side aside-no-image bg-white">
       <div className="aside-trend-card">
         <h3>Most Trending</h3>
         <div>
@@ -16,7 +16,7 @@ function AsideNoImaage({trend}) {
         })}
         <p className="show-more">Show more</p>
       </div>
-    </>
+    </section>
   );
 }
 
