@@ -20,6 +20,10 @@ body{
   border: var(--default-border);
 }
 
+.red{
+  color: var(--color-red);
+}
+
 button {
   border-radius: 50px;
   border: 1px solid transparent;
@@ -171,11 +175,6 @@ main {
 
 main, header{
   padding-inline: 7rem;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
 
 .left-side {

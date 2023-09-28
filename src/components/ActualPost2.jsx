@@ -8,6 +8,10 @@ function ActualPost2({posts}) {
     setShowComments(true);
   }
 
+  const handleCloseMessageReply = () => {
+    setShowComments(false);
+  }
+
 
  
   return (
@@ -26,7 +30,7 @@ function ActualPost2({posts}) {
               </div>
             </div>
             <div className="metadata-right">
-              <i className="fas fa-share mgn-05" onClick={handleMessageReply}></i>
+              <i className="fas fa-share mgn-05"></i>
               <i className="fas fa-ellipsis-vertical mgn-05"></i>
             </div>
           </div>
@@ -53,7 +57,7 @@ function ActualPost2({posts}) {
 
           <div className="post-actions">
             {showComments ? (
-              <i className="fas fa-heart"></i>
+              <i className="fas fa-close red" onClick={handleCloseMessageReply}></i>
             ) : (
               <div>
                 <i

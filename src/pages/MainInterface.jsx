@@ -30,7 +30,7 @@ function MainInterface() {
         
         <div className="side lower-middle">
           <button onClick={handleStartNewPost}>Start Post</button>
-          <ActualPost2 posts={posts}/>
+          <ActualPost2 posts={posts} />
         </div>
       </div>
       <div className="right-side">
