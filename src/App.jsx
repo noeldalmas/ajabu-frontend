@@ -9,6 +9,7 @@ import Questions from "./pages/Questions";
 import Header from "./components/Header";
 import Login from "./pages/Login";
 import MainApp from "./pages/MainApp";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Route>
 
         <Route path="login" element={<Login/>}/>
+        <Route path="signup" element={<Signup/>}/>
       </Routes>
     </div>
   );

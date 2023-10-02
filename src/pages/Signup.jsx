@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Input } from '../components/form/Form';
 
-function Login(props) {
+function Signup(props) {
 
-    const handleLogin = (e)=>{
+    const handleSignup = (e)=>{
         e.preventDefault();
 
     }
@@ -15,28 +15,27 @@ function Login(props) {
             <div className='flex login__container'>
                 <div className='login__container--left w-1/2'></div>
                 <div className='login__container--right relative w-1/2 flex flex-col'>
-                    <h1>Login</h1>
+                    <h1>Sign Up</h1>
 
-                    <form onChange={handleLogin} className='flex flex-col'>
+                    <form onChange={handleSignup} className='flex flex-col'>
                         
+                        <Input name="username" label="Full Name" placeholder="Duncan Msumari"/>
                         <Input name="email" label="Email" placeholder="joe@gmail.com"/>
                         <Input name="password" label="Password" type="password" placeholder="Enter password"/>
+                        <Input name="password" label="Confirm Password" type="password" placeholder="Confirm password"/>
 
                         <div className='forgot__password'>
-                            <NavLink to="/">Forgot password?</NavLink>
-                        </div>
-                        <div className='forgot__password'>
-                            <NavLink to="/signup">Don't have an Account? Sign Up</NavLink>
+                            <NavLink to="/login">Already have an Account? Login</NavLink>
                         </div>
                     </form>
 
                     <button type='submit' className="main__btn">
-                        Login
+                        Signup
                     </button>
 
-                    <div className='need__help'>
+                    {/* <div className='need__help'>
                         <NavLink to="/">Need help?</NavLink>
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -51,4 +50,4 @@ function Login(props) {
     );
 }
 
-export default Login;
+export default Signup;
