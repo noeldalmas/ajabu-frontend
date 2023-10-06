@@ -19,7 +19,7 @@ function Login(props) {
 
                     <form onChange={handleLogin} className='flex flex-col'>
                         
-                        <Input name="email" label="Email" placeholder="joe@gmail.com"/>
+                        <Input name="username" label="Username" placeholder="Adja Gueye"/>
                         <Input name="password" label="Password" type="password" placeholder="Enter password"/>
 
                         <div className='forgot__password'>

@@ -242,6 +242,8 @@ main, header{
 }
 
 /* Right */
+
+/* Right */
 .img-1-side {
   margin-top: 20px;
 
@@ -571,4 +573,28 @@ h1{
 .curtain img{
   width: 15rem;
   height: auto;
+}
+.signup .login__container--right {
+  padding-inline: 1%;
+  width: 60%; 
+  gap: 1rem ;
+}
+.signup .login__container--left{
+  width: 40%;
+}
+.signup__row{
+  gap: 5%;
+}
+.signup .form__group{
+  gap: 0.25rem; 
+}
+.signup h1{
+  font-size: 2.5rem;
+}
+.message__container{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d83f3157;
+  color: red;
+  font-weight: 600;
 }
